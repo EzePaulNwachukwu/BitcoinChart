@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.currency-container {
+
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 9px solid green;
+}
+
+h1, h3 , p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.currency-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.currency-table thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.currency-table th, .currency-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.currency-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.currency-table td {
+    font-size: 16px;
+}
+
+.currency-table th {
+    font-size: 18px;
+}
+b:first-child{
+color: blueviolet;
+}
+@media (max-width:706px) {
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 5px;
+}
+
+.currency-container {
+    max-width: 70%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 10;
+}
+
+h1, h3 {
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+
+.currency-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.currency-table thead {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 15px;
+}
+
+.currency-table th, .currency-table td {
+    padding: 9px 5px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.currency-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.currency-table td {
+
+    font-size: 7px;
+    font-weight: bolder;
+}
+
+.currency-table th {
+    font-size: 7px;
+    font-weight: bolder;
+
+}
+
+p{
+    font-size: 8px;
+    font-weight: bolder;
+    color: red;
+    text-align: center;
+
+}
+b:first-child{
+color: blueviolet;
+}
+h3{
+
+}
+
+
+}
