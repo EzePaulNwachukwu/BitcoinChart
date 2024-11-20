@@ -71,19 +71,20 @@ body {
 }
 
 .currency-container {
-    max-width: 70%;
+    width: auto;;
     margin: 0 auto;
+    margin-top: 150px;
     background-color: white;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    font-size: 10;
+    font-size: 15;
 }
 
 h1, h3 {
     text-align: center;
     margin-bottom: 12px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bolder;
 }
 
@@ -96,7 +97,7 @@ h1, h3 {
 .currency-table thead {
     background-color: #4CAF50;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .currency-table th, .currency-table td {
@@ -111,29 +112,25 @@ h1, h3 {
 
 .currency-table td {
 
-    font-size: 7px;
+    font-size: 10px;
     font-weight: bolder;
 }
 
 .currency-table th {
-    font-size: 7px;
+    font-size: 10px;
     font-weight: bolder;
 
 }
 
 p{
-    font-size: 8px;
+    font-size: 10px;
     font-weight: bolder;
     color: red;
     text-align: center;
 
 }
-b:first-child{
-color: blueviolet;
-}
-h3{
 
-}
+
 
 
 }

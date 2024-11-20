@@ -67,7 +67,7 @@ window.onload = () => {
         return true;
       }
     };
- 
+
     if (validator() == true) {
       let newprofile = [
         {
@@ -115,7 +115,7 @@ window.onload = () => {
           userNameinputorEmail.value == profile.Email) &&
         inputLoginPassword.value == profile.password
       ) {
-        location.assign("http://127.0.0.1:5502/index.html");
+        location.assign("http://127.0.0.1:5502/bitcoinChart.html");
       } else {
         errorMessage.style.display = "block";
       }

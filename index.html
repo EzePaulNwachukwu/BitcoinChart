@@ -1,60 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BitcoinChart</title>
-    <link rel="stylesheet" href="bitcoinChart.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="registeration.css" />
+  </head>
+  <body>
+    <main>
+      <div class="login-container">
+        <form action="/login" method="POST" class="login-form">
+          <p class="incorrect">incorrect username or password</p>
 
+          <h2>Login</h2>
 
-    <div class="currency-container">
-        <h1>chart for  </h1>
-        <h3><span>As at </span></h3>
+          <div class="input-group">
+            <label for="username">Username/Email</label>
+            <input type="text" id="usernameLogin" name="usernameLogin" required />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="passwordLogin" name="passwordLogin" required />
+          </div>
+          <button class="loginBtn" type="submit">Login</button>
+          <p class="register-link">
+            Don't have an account?<a class="registerurl" href="#">Register here</a>
+          </p>
+        </form>
+      </div>
 
-        <p><b class="Disclaimer">Disclaimer: </b></p>
-        <table class="currency-table">
-            <thead>
-                <tr>
-                    <th>Currency</th>
-                    <th>Symbol</th>
-                    <th>Code</th>
-                    <th>Description</th>
-                    <th>Rate</th>
-                    <th>Rate Float</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="usd-currenccy"></td>
-                    <td class="usd-symbole">$</td>
-                    <td class="usd-code"></td>
-                    <td class="usd-descrition"></td>
-                    <td class="usd-rate"></td>
-                    <td class="usd-rate-float"></td>
-                </tr>
-                <tr>
-                    <td>EUR</td>
-                    <td>€</td>
-                    <td>EUR</td>
-                    <td>Euro</td>
-                    <td class="eur-rate"></td>
-                    <td class="eur-rate-float"></td>
-                </tr>
-                <tr>
-                    <td>GBP</td>
-                    <td>£</td>
-                    <td>GBP</td>
-                    <td>British Pound Sterling</td>
-                    <td class="gbp-rate"></td>
-                    <td class="gbp-rate-float"></td>
-                </tr>
-              
-            </tbody>
-        </table>
-    </div>
+      <div class="register-container">
+          <form action="/register" method="POST" class="register-form">
+            <h2>Register</h2>
+          <p class="incorrectRegMessg"></p>
 
-    <script src="bitcoinChart.js"></script>
-</body>
+             <div class="input-group">
+              <label for="Fname">Fullname</label>
+              <input type="text" id="Fname" name="Fname" required />
+
+            </div>
+            <div class="input-group">
+              <label for="username">username</label>
+              <input type="text" id="username" name="username" required />
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+            <div class="input-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                required
+              />
+            </div>
+            <button class="regBtn" type="submit">Register</button>
+            <p class="login-link">
+              Already have an account?  ><a class="loginurl" href="#">Login here</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="registeration.js" type="module"></script>
+  </body>
 </html>
