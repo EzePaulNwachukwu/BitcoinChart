@@ -1,153 +1,143 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    justify-content: center;
-    align-items: center;
-    height: 150vh;
-    background-color: #f0f0f0;
-
+  margin: 0;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+  background-color: #f0f0f0;
 }
-main{
-    width: 30%;
-    margin: auto;
-    margin-top: 20px;
-    overflow: hidden;
+main {
+  width: 100%;
+  margin: auto;
+  display: flex;
 }
-
 
 .login-container {
-    margin-top: 50px !important;
-
-    background-color: #fff;
-    padding: 20px;
-    position: fixed;
+  width: 24%;
+  margin: auto;
+  margin-top: 50px !important;
 }
 
 h2 {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .input-group {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .input-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .input-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 button:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
-.register-container{
-    background-color: #fff;
-    padding: 20px;
-    position: fixed;
-
+.register-container {
+  width: 24%;
+  margin: auto;
+  margin-top: 50px !important;
 }
-.incorrect{
-    display: none;
-    font-size: 10px;
-    text-align: center;
-    margin: 0 10px;
-    color: red;
+.incorrect {
+  display: none;
+  font-size: 10px;
+  text-align: center;
+  margin: 0 10px;
+  color: red;
 }
 .register-link {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
 }
 
 .register-link a {
-    color: #4CAF50;
-    text-decoration: none;
+  color: #4caf50;
+  text-decoration: none;
 }
 
 .register-link a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.display{
-    display: inline;
+.display {
+  display: inline;
 }
 @media (max-width: 760px) {
-    main{
-    width: 60%;
-    margin: auto;
-    margin-top: 20px;
-    overflow: hidden;
-}
- .input-group label {
+  main {
+
+    width: 90%;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+  }
+  .input-group label {
     display: block;
     margin-bottom: 5px;
     font-weight: 700;
-}
+  }
 
-.input-group input {
+  .input-group input {
     width: 100%;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-} 
- .register-container{
-    width: 70%;
-    background-color: #fff;
-    padding: 20px;
-    position: fixed;
+  }
+  .register-container {
+    width: auto;
+    margin:auto;
 
-}
-button {
+  }
+  button {
     width: 100%;
     padding: 5px;
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 12px;
-}
-.register-link,.login-link {
-    
+  }
+  .register-link,
+  .login-link {
     text-align: center;
     margin-top: 10px;
     font-size: 10.7px;
     font-weight: bolder;
-}
+  }
 
-.login-container {
-    width: 60%;
+  .login-container {
+    width: auto;
     margin: auto;
-    background-color: #fff;
-    padding: 20px;
-    position: fixed;
-
-}
-
-
+    /* background-color: #fff; */
+  }
 }

@@ -14,12 +14,14 @@ window.onload = () => {
   changeinterface.addEventListener("click", (e) => {
     e.preventDefault();
     logincontainer.style.display = "none";
+   
     registercontainer.style.display = "inline";
   });
   changeinterface2.addEventListener("click", (e) => {
     e.preventDefault();
     logincontainer.style.display = "inline";
     registercontainer.style.display = "none";
+  
   });
 
   const regBtn = document.querySelector(".regBtn");
@@ -115,6 +117,8 @@ window.onload = () => {
           userNameinputorEmail.value == profile.Email) &&
         inputLoginPassword.value == profile.password
       ) {
+        errorMessage.style.display = "none";
+
         location.assign("http://127.0.0.1:5502/bitcoinChart.html");
       } else {
         errorMessage.style.display = "block";
